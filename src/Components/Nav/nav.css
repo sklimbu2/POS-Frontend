@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 64px;
+    border-bottom: 1px solid var(--TextColor);
+    background: var(--WhiteColor);
+    position: relative;
+    z-index: 1;
+}
+
+.profile{
+    height: 60px;
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile-name{
+    font-size: 16px;
+    font-weight: 500;
+    margin:0;
+}
+.profile-status{
+    color: var(--TextColor);
+    font-size: 14px;
+    margin: 0;
+}
+@media(max-width: 450px){
+    nav{
+        padding: 5px 32px;
+    }
+    .profile-img {
+        width: 40px;
+        height: 40px;
+    }
+    .profile-name{
+        font-size: 14px;
+    }
+}
+

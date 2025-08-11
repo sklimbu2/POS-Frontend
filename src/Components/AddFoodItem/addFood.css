@@ -1,0 +1,45 @@
+.addFood{
+    position:fixed;
+  top:0;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  overflow: hidden;
+}
+.Dark-Background{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.5);
+   overflow: hidden;
+}
+.addFood-content{
+    position:fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 450px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.addFood-fields{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.upload-text{
+    margin-bottom: 10px;
+}
+.addFood-Btn{
+    background: var(--ButtonColor);
+    color: var(--WhiteColor);
+    font-size:18px;
+    border:none;
+    padding: 10px 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}

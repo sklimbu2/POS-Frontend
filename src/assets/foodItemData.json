@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "name": "Grilled Salmon",
+      "category": "main course",
+      "price": 20.00,
+      "image": "/images/grilled-salmon.jpg",
+      "times" : 1
+    },
+    {
+      "id": 2,
+      "name": "Beef Steak",
+      "category": "main course",
+      "price": 20.00,
+      "image": "/images/beef-steak.jpeg",
+      "times" : 1
+    },
+    {
+      "id": 3,
+      "name": "Vegetable Pasta",
+      "category": "main course",
+      "price": 15.00,
+      "image": "/images/Vegetable-Pasta.jpg",
+      "times" : 1
+    },
+    {
+      "id": 4,
+      "name": "Orange Juice",
+      "category": "drinks",
+      "price": 3.50,
+      "image": "/images/Orange-Juice.jpg",
+      "times" : 1
+    },
+    {
+      "id": 5,
+      "name": "Iced Coffee",
+      "category": "drinks",
+      "price": 4.25,
+      "image": "/images/Iced-Coffee.jpg",
+      "times" : 1
+    },
+    {
+      "id": 6,
+      "name": "Sparkling Water",
+      "category": "drinks",
+      "price": 2.00,
+      "image": "/images/Sparkling-Water.jpeg",
+      "times" : 1
+    },
+    {
+      "id": 7,
+      "name": "Grilled Salmon",
+      "category": "main course",
+      "price": 20.00,
+      "image": "/images/grilled-salmon.jpg",
+      "times" : 1
+    },
+    {
+      "id": 8,
+      "name": "Beef Steak",
+      "category": "main course",
+      "price": 20.00,
+      "image": "/images/beef-steak.jpeg",
+      "times" : 1
+    },
+    {
+      "id": 9,
+      "name": "Vegetable Pasta",
+      "category": "main course",
+      "price": 15.00,
+      "image": "/images/Vegetable-Pasta.jpg",
+      "times" : 1
+    },
+    {
+      "id": 10,
+      "name": "Orange Juice",
+      "category": "drinks",
+      "price": 3.50,
+      "image": "/images/Orange-Juice.jpg",
+      "times" : 1
+    },
+    {
+      "id": 11,
+      "name": "Iced Coffee",
+      "category": "drinks",
+      "price": 4.25,
+      "image": "/images/Iced-Coffee.jpg",
+      "times" : 1
+    },
+    {
+      "id": 12,
+      "name": "Sparkling Water",
+      "category": "drinks",
+      "price": 2.00,
+      "image": "/images/Sparkling-Water.jpeg",
+      "times" : 1
+    }
+]

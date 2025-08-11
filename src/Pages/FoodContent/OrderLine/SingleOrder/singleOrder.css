@@ -1,0 +1,20 @@
+.singleOrder{
+  position:absolute;
+  top:0;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.singleOrder-content{
+  position:absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 500px;
+  background-color: #f2f2f2;
+
+}

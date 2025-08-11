@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --HeaderColor: #1F1F1F;
+    --TextColor: #676767;
+    --WhiteColor: #f5f4f2;
+    --LightBlueColor: #2f63d4;
+    --LightTextColor: #4a4949;
+    --DangerColor : #d42f2f;
+    --BackgroundColor: rgba(0, 0, 0, 0.1);
+    --ButtonColor: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+     font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+    padding: 0px;
+    color: var(--HeaderColor);
+    max-width: 100vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li{
+    list-style: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul, h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 0;
 }
-
-.App-link {
-  color: #61dafb;
+button{
+    background-color: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+.header{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.Dark-Background{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.5);
+   overflow: hidden;
+}
+.inputField-text{
+    position:relative;
+    bottom:-10px;
+    left: 12px;
+    width: fit-content;
+    height:20px;
+    font-size: 16px;
+    color: var(--LightTextColor);
+    background: var(--WhiteColor);
+}
+.inputTag{
+    width:200px;
+    padding:10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+     margin: 0;
+}
+@media(max-width: 1100px){
+    .header{
+        font-size: 18px;
+    }
+}
+@media(max-width: 900px){
+    body{
+        height: auto;
+        max-height: auto;
+        overflow-y:scroll;
+    }
 }

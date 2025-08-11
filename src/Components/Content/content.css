@@ -1,0 +1,46 @@
+.posContent{
+    display: flex;
+}
+.sideNav{
+    min-width:90px;
+    height: 100vh;
+    border-right: 1px solid var(--TextColor);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0px;
+    padding-top: 100px;
+    align-items: center;
+    position:fixed;
+    top: 0;
+}
+.sideNav-icons{
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.sideNav-icon{
+    color: var(--WhiteColor);
+}
+.sideNav-clicked{
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media(max-width: 450px){
+    .sideNav{
+        min-width:60px;
+    }
+    .sideNav-icons {
+        font-size: 14px;
+        width: 40px;
+        height: 40px;
+    }
+}

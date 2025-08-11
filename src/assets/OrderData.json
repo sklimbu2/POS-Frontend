@@ -1,0 +1,144 @@
+{
+  "orders" :[
+  {
+    "id": "R122",
+    "items": [
+      { "name": "Margherita Pizza", "amount": 12.99, "times": 5 },
+      { "name": "Garlic Bread", "amount": 4.99, "times": 3 },
+      { "name": "Coca-Cola", "amount": 2.50, "times": 8 }
+    ],
+    "created_date": "2024-05-15",
+    "created_time": "14:30:22",
+    "total_amount": 20.48
+  },
+  {
+    "id": "W435",
+    "items": [
+      { "name": "Chicken Burger", "amount": 8.99, "times": 7 },
+      { "name": "French Fries", "amount": 3.49, "times": 10 },
+      { "name": "Iced Tea", "amount": 2.25, "times": 4 }
+    ],
+    "created_date": "2024-05-16",
+    "created_time": "18:15:10",
+    "total_amount": 14.73
+  },
+  {
+    "id": "T789",
+    "items": [
+      { "name": "Vegetable Pasta", "amount": 10.50, "times": 2 },
+      { "name": "Caesar Salad", "amount": 7.25, "times": 6 },
+      { "name": "Sparkling Water", "amount": 1.75, "times": 3 }
+    ],
+    "created_date": "2024-05-17",
+    "created_time": "12:45:05",
+    "total_amount": 19.50
+  },
+  {
+    "id": "A321",
+    "items": [
+      { "name": "Pepperoni Pizza", "amount": 14.50, "times": 9 },
+      { "name": "Mozzarella Sticks", "amount": 6.25, "times": 5 }
+    ],
+    "created_date": "2024-05-18",
+    "created_time": "19:20:33",
+    "total_amount": 20.75
+  },
+  {
+    "id": "B654",
+    "items": [
+      { "name": "Grilled Salmon", "amount": 18.99, "times": 4 },
+      { "name": "Mashed Potatoes", "amount": 4.50, "times": 7 },
+      { "name": "Lemonade", "amount": 3.00, "times": 5 }
+    ],
+    "created_date": "2024-05-19",
+    "created_time": "13:10:47",
+    "total_amount": 26.49
+  },
+  {
+    "id": "C987",
+    "items": [
+      { "name": "Beef Tacos", "amount": 9.75, "times": 12 },
+      { "name": "Guacamole", "amount": 3.99, "times": 8 },
+      { "name": "Mexican Coke", "amount": 2.99, "times": 6 }
+    ],
+    "created_date": "2024-05-20",
+    "created_time": "20:05:12",
+    "total_amount": 16.73
+  },
+  {
+    "id": "D246",
+    "items": [
+      { "name": "Chicken Shawarma", "amount": 11.25, "times": 15 },
+      { "name": "Hummus", "amount": 5.50, "times": 9 },
+      { "name": "Baklava", "amount": 4.00, "times": 4 }
+    ],
+    "created_date": "2024-05-21",
+    "created_time": "12:30:00",
+    "total_amount": 20.75
+  },
+  {
+    "id": "E135",
+    "items": [
+      { "name": "Vegan Buddha Bowl", "amount": 12.00, "times": 3 },
+      { "name": "Green Smoothie", "amount": 5.75, "times": 7 }
+    ],
+    "created_date": "2024-05-22",
+    "created_time": "11:45:18",
+    "total_amount": 17.75
+  },
+  {
+    "id": "F579",
+    "items": [
+      { "name": "Sushi Platter", "amount": 22.50, "times": 6 },
+      { "name": "Miso Soup", "amount": 3.25, "times": 10 },
+      { "name": "Matcha Tea", "amount": 4.50, "times": 5 }
+    ],
+    "created_date": "2024-05-23",
+    "created_time": "17:55:30",
+    "total_amount": 30.25
+  },
+  {
+    "id": "G802",
+    "items": [
+      { "name": "Ribeye Steak", "amount": 24.99, "times": 5 },
+      { "name": "Grilled Asparagus", "amount": 6.50, "times": 8 },
+      { "name": "Red Wine", "amount": 8.00, "times": 3 }
+    ],
+    "created_date": "2024-05-24",
+    "created_time": "20:30:45",
+    "total_amount": 39.49
+  },
+  {
+    "id": "H404",
+    "items": [
+      { "name": "Lobster Roll", "amount": 19.99, "times": 4 },
+      { "name": "Clam Chowder", "amount": 6.25, "times": 7 }
+    ],
+    "created_date": "2024-05-25",
+    "created_time": "14:15:00",
+    "total_amount": 26.24
+  },
+  {
+    "id": "J668",
+    "items": [
+      { "name": "Chocolate Pancakes", "amount": 8.50, "times": 9 },
+      { "name": "Caramel Latte", "amount": 4.75, "times": 12 },
+      { "name": "Fresh Fruit", "amount": 3.99, "times": 6 }
+    ],
+    "created_date": "2024-05-26",
+    "created_time": "09:30:22",
+    "total_amount": 17.24
+  },
+  {
+    "id": "K911",
+    "items": [
+      { "name": "Pho Noodle Soup", "amount": 10.99, "times": 11 },
+      { "name": "Spring Rolls", "amount": 5.25, "times": 14 },
+      { "name": "Thai Iced Tea", "amount": 3.50, "times": 7 }
+    ],
+    "created_date": "2024-05-27",
+    "created_time": "12:00:00",
+    "total_amount": 19.74
+  }
+]
+}

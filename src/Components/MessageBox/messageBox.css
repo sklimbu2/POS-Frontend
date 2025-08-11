@@ -1,0 +1,39 @@
+.messageBox{
+    position: fixed;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    width: 60vh;
+    height: 24px;
+    background: var(--LightBlueColor);
+    padding:20px;
+    border-radius:5px;
+    color: var(--WhiteColor);
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.messageBox-content{
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+.messageText{
+    font-size: 18px;
+    font-weight: 600;
+}
+.messageIcon, .messageClose{
+    font-size: 18px;
+} 
+.messageClose{
+    height: 14px;
+    width: 14px;
+    border: 1px solid var(--WhiteColor);
+    border-radius: 50%;
+}
+.close{
+    top: -200px;
+}   
