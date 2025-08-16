@@ -2,8 +2,18 @@ import {useState, useEffect} from 'react'
 import { MdAdd } from "react-icons/md";
 import { RiSubtractFill } from "react-icons/ri";
 import Card from '../../../../../Components/EditandDeleteCard/card'
-const FoodItem = ({currentOrders, setCurrentOrders, item, clickedEdit}) => {
+import DeleteCard from '../../../../../Components/DeleteFoodItem/deleteFoodItem'
+const FoodItem = ({
+    currentOrders, 
+    setCurrentOrders, 
+    item, 
+    clickedEdit,
+    deleteMenuItem,
+    setMessage,
+    fetchFoodData
+}) => {
     const [times, setTimes] = useState(0)
+    const [isClickedDelete, setIsClickedDelete] = useState(false)
     useEffect(()=>{
         if(currentOrders && currentOrders.items){
             const foundItem = currentOrders.items.find(currentItem => 
@@ -95,9 +105,21 @@ const FoodItem = ({currentOrders, setCurrentOrders, item, clickedEdit}) => {
             });
         }
     }
+    const handleDelete = (itemName, imageUrl) => {
+        if( deleteMenuItem(itemName, imageUrl)){
+            setIsClickedDelete(false)
+            setMessage(`Food Item: ${itemName} was Deleted`)
+            fetchFoodData()
+        }
+        else{
+            console.log('item not deleted')
+        }
+    }
     return(
         <div className='food-item' >
-            {clickedEdit && <Card /> }
+            
+            {clickedEdit && <Card setIsClickedDelete={setIsClickedDelete} /> }
+            {isClickedDelete && <DeleteCard item={item} setIsClickedDelete={setIsClickedDelete} handleDelete={handleDelete}/>}
             <img 
                 src={`https://pos-backend-fypx.onrender.com${item.imageUrl}`} alt={item.name} 
                 className='food-image' 

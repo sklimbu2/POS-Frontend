@@ -13,8 +13,9 @@ const FoodContent = () => {
     const [isLoadingFoodData, setIsLoadingFoodData] = useState(true)
     const [error, setError] = useState(null);
     const [errorFoodData, setErrorFoodData] = useState(null)
-    const [message, setMessage] = useState('this is testing..')
+    const [message, setMessage] = useState('')
     const API_URL = 'https://pos-backend-fypx.onrender.com/api/v1/orders'
+    //const API_URL = 'http://localhost:4000/api/v1/orders'
     const fetchOrders = async() => {
             try{
                 const response = await axios.get(API_URL)
@@ -76,6 +77,18 @@ const FoodContent = () => {
             return false
         }
     }
+    const deleteMenuItem = async (ItemName, ImageUrl) => {
+        console.log(ItemName, ImageUrl)
+        const API_URL = `https://pos-backend-fypx.onrender.com/api/v1/MenuItem?ItemName=${ItemName}&ImageUrl=${ImageUrl}`
+        //const API_URL = `http://localhost:4000/api/v1/MenuItem?ItemName=${ItemName}&ImageUrl=${ImageUrl}`
+        try{
+            await axios.delete(API_URL)
+            return true
+        }catch(error){
+            return false
+        }
+ 
+    }
     useEffect(() => {
         fetchOrders()
         fetchFoodData()
@@ -105,6 +118,7 @@ const FoodContent = () => {
                 isLoadingFoodData = {isLoadingFoodData}
                 fetchOrders={fetchOrders}
                 fetchFoodData={fetchFoodData}
+                deleteMenuItem = {deleteMenuItem}
             />
         </div>
     )

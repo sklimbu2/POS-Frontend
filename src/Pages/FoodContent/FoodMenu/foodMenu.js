@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import './foodMenu.css'
 import Receipt from './Receipt/receipt'
 import FoodItems from './FoodItems/foodItems';
@@ -20,7 +20,8 @@ const FoodMenu = ({
     errorFoodData,
     isLoadingFoodData,
     fetchOrders,
-    fetchFoodData
+    fetchFoodData,
+    deleteMenuItem
 }) =>{
     const [isClicked, setIsClicked] = useState('All Category')
     const [clickedAdd, setClickedAdd] = useState(false)
@@ -42,13 +43,6 @@ const FoodMenu = ({
             <div>
                 <p>Error: {errorFoodData}</p>
                 <button onClick={()=> window.location.reload()}>Retry</button>
-            </div>
-        )
-    }
-    if(FoodData.length === 0){
-        return(
-            <div>
-                <p>No More Food Items...</p>
             </div>
         )
     }
@@ -95,6 +89,9 @@ const FoodMenu = ({
                     FoodData.filter((item)=> (item.category.toLowerCase()) === (isClicked.toLowerCase()))
                 }
                 clickedEdit = {clickedEdit}
+                deleteMenuItem={deleteMenuItem}
+                fetchFoodData={fetchFoodData}
+                setMessage={setMessage}
                 />
                
             </div>

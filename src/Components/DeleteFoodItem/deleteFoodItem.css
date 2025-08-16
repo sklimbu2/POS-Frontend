@@ -1,0 +1,36 @@
+.deleteFoodItem{
+    position:fixed;
+  top:0;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  overflow: hidden;
+}
+.deleteFoodItem-content{
+    position:fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 350px;
+    background-color: #f2f2f2;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+}
+.deleFoodItem-closeIcon{
+    font-size: 22px;
+    color: var(--DangerColor);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.deleteFoodItem-card{
+    width: 120px;
+    border: 1px solid var(--TextColor);
+    border-radius: 5px;
+}
